@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="ToDoList.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ToDoList"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <ListView Name="listView"  HorizontalAlignment="Left" Height="612" Margin="20,149,0,0" VerticalAlignment="Top" Width="1321">
+
+        </ListView>
+
+        <TextBox Name="textBox" HorizontalAlignment="Left" Margin="20,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1215"/>
+        <Button Name="send" Content="Send" HorizontalAlignment="Left" Margin="1245,90,0,0" VerticalAlignment="Top" Width="114" Click="send_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="676,20,0,0" TextWrapping="Wrap" Text="To Do List" VerticalAlignment="Top" FontSize="32"/>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="Edit" Icon="Edit" Click="EditBarButton_Click"/>
+                <AppBarButton Label="Remove" Icon="Remove" Click="AppBarButton_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
