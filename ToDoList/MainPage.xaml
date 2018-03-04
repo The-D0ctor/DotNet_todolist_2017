@@ -9,13 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <ListView Name="listView"  HorizontalAlignment="Left" Height="612" Margin="20,149,0,0" VerticalAlignment="Top" Width="1321">
+        <ListView Name="listView" Height="565" Margin="20,149,4,0" VerticalAlignment="Top"/>
 
-        </ListView>
-
-        <TextBox Name="textBox" HorizontalAlignment="Left" Margin="20,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1215"/>
-        <Button Name="send" Content="Send" HorizontalAlignment="Left" Margin="1245,90,0,0" VerticalAlignment="Top" Width="114" Click="send_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="676,20,0,0" TextWrapping="Wrap" Text="To Do List" VerticalAlignment="Top" FontSize="32"/>
+        <TextBox Name="textBox" Margin="20,93,157,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Name="send" Content="Send" HorizontalAlignment="Right" Margin="0,93,29,0" VerticalAlignment="Top" Click="send_Click" Height="32" Width="114"/>
+        <TextBlock x:Name="textBlock" Margin="0,19,0,0" TextWrapping="Wrap" Text="To Do List" FontSize="32" HorizontalAlignment="Center" Width="147" Height="43" VerticalAlignment="Top"/>
 
     </Grid>
     <Page.BottomAppBar>
